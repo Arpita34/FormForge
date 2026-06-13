@@ -140,6 +140,11 @@ h4 {
   padding: 1.5rem;
   box-shadow: var(--shadow);
 }
+@media (max-width: 640px) {
+  .card {
+    padding: 1rem;
+  }
+}
 
 /* ── Buttons ──────────────────────────────────────────────────────────────── */
 .btn {
@@ -559,5 +564,21 @@ h4 {
   .page-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .survey-card {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .survey-actions {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .editor-grid {
+    grid-template-columns: 1fr !important;
   }
 }

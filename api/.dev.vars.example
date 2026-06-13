@@ -1,0 +1,13 @@
+# .dev.vars — Local development secrets for Cloudflare Workers
+# Copy this file to .dev.vars and fill in the values.
+# .dev.vars is gitignored and should NEVER be committed.
+#
+# In production, set these via:
+#   wrangler secret put <KEY>
+
+# Optional: Email API key for sending real magic links in production
+# In dev, magic links are printed to the wrangler console instead.
+# RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+
+# Optional: A secret used to sign session tokens (if you add HMAC later)
+# SESSION_SECRET=change_me_to_a_random_32_char_string

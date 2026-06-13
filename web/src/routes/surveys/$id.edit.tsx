@@ -272,7 +272,7 @@ function SurveyBuilderPage() {
 
       {/* ── Body ── */}
       <div
-        className="container"
+        className="container editor-grid"
         style={{
           paddingTop: "2rem",
           display: "grid",

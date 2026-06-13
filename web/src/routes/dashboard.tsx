@@ -114,7 +114,7 @@ function SurveyCard({
 
   return (
     <div
-      className="card animate-in"
+      className="card animate-in survey-card"
       style={{
         display: "flex",
         alignItems: "center",
@@ -149,7 +149,7 @@ function SurveyCard({
       </div>
 
       {/* Actions */}
-      <div className="flex gap-2" style={{ flexShrink: 0 }}>
+      <div className="flex gap-2 survey-actions" style={{ flexShrink: 0 }}>
         <Link
           to="/surveys/$id/responses"
           params={{ id: survey.id }}
