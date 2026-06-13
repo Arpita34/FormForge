@@ -1,0 +1,23 @@
+{
+  "name": "survey-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-09-23",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "survey-db",
+      "database_id": "local-db",
+      "migrations_dir": "src/db/migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "local-kv",
+      "preview_id": "local-kv-preview"
+    }
+  ],
+  "vars": {
+    "ENVIRONMENT": "development"
+  }
+}

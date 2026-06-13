@@ -1,0 +1,16 @@
+packages:
+  - "api"
+  - "web"
+  - "packages/*"
+
+allowBuilds:
+  '@biomejs/biome': true
+  esbuild: true
+  sharp: true
+  workerd: true
+
+onlyBuiltDependencies:
+  - "@biomejs/biome"
+  - "esbuild"
+  - "sharp"
+  - "workerd"

@@ -1,0 +1,16 @@
+{
+  "name": "survey-builder",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter api dev\" \"pnpm --filter web dev\"",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "typecheck": "pnpm --filter api typecheck && pnpm --filter web typecheck",
+    "build": "pnpm --filter web build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "concurrently": "^9.1.0"
+  }
+}
